@@ -1,0 +1,94 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1{
+  font-size: 3rem;
+  color: #d8dfe7;
+}
+hr {
+  margin: 20px auto;
+  color: #F05F44;
+  border: 3px solid #F05F44;
+  max-width: 65px;
+  opacity: 1;  
+}
+
+.btn{
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;
+}
+
+.btn-xl{
+  padding: 1rem, 2rem;
+}
+.btn-primary{
+  background-color: grey;
+  border-color: black;
+  animation: flicker 1.5s infinite alternate;
+}
+.btn-primary:hover{
+  background-color:  #6c757d;
+  border-color: grey;
+  border-width: 4px;
+}
+hr{
+  border-color: #6c757d;
+  border-width: 1px;
+  max-width: 65px;
+  
+}
+.buffer{
+  height: 10rem;
+}
+
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+h1 {
+  font-size: 4.2rem;    
+  font-family: "Vibur", sans-serif;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(12, 64, 236),
+      0 0 80px rgb(12, 64, 236),
+      0 0 90px rgb(12, 64, 236),
+      0 0 100px rgb(12, 64, 236),
+      0 0 150px rgb(12, 64, 236);
+  }
+ 0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px rgb(12, 64, 236),
+      0 0 73px rgb(12, 64, 236),
+      0 0 80px rgb(12, 64, 236),
+      0 0 94px rgb(12, 64, 236),
+      0 0 140px rgb(12, 64, 236);
+  }
+}
+
+
+  
